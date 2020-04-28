@@ -30,7 +30,7 @@ console.log('EXAMPLE', 'tripledVariable', tripledVariable);
 
 // Set a constant named 'bestClass' equal to the name of our SEI class (myCohortNameHere) capitalized.
 // Log this value to the console.
-// let bestClass = 'myCohortNameHere'
+ let bestClass = 'neptune'
 
 
 // Set a constant named bestClassLowercase that converts bestClass to an all lowercase string.
