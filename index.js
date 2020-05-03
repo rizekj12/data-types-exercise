@@ -15,8 +15,8 @@
 const givenVariable = 20;
 const doubledVariable = givenVariable * 2;
 const tripledVariable = givenVariable * 3;
-console.log(doubledVariable);
-console.log('EXAMPLE', 'tripledVariable', tripledVariable);
+// console.log(doubledVariable);
+// console.log('EXAMPLE', 'tripledVariable', tripledVariable);
 // After running this and feeling comfortable, feel free to comment the above block of code out (either give each line a // or highlight the block of code and press COMMAND - / )
 
 // DATATYPES
@@ -32,7 +32,7 @@ console.log('EXAMPLE', 'tripledVariable', tripledVariable);
 // Log this value to the console.
  let bestClass = 'Neptune'
 
- console.log(bestClass)
+
 
 
 // Set a constant named bestClassLowercase that converts bestClass to an all lowercase string.
@@ -40,7 +40,7 @@ console.log('EXAMPLE', 'tripledVariable', tripledVariable);
 
 const bestClassLowercase = bestClass.toLowerCase();
 
-console.log(bestClassLowercase);
+
 
 
 
@@ -60,7 +60,7 @@ const amount2 = 3;
 
 total = amount1 + amount2
 
-console.log(total);
+
 
 
 
@@ -85,6 +85,7 @@ const pounds = 155;
 
 
 
+
 /********************************
  *
  * STEP D: Grand Hotel Tremezzo: Part 1
@@ -95,6 +96,9 @@ const pounds = 155;
 // 'George Clooney' 'Silvio Berlusconi'  and 'Isabella Rossellini'.
 // Log grandHotelTremezzoGuests to the console.
 
+let grandHotelTremezzoGuests = ["George Clooney", "Silvio Berlusconi", "Isabella Rossellini"]
+
+//console.log(grandHotelTremezzoGuests)
 
 
 
@@ -104,6 +108,7 @@ const pounds = 155;
 // Log grandHotelTremezzoGuests to the console.
 
 
+grandHotelTremezzoGuests.push("Fabio")
 
 
 
@@ -113,6 +118,8 @@ const pounds = 155;
 // so he won't be able to stay at the hotel remove him from the end of the array.
 // Log grandHotelTremezzoGuests to the console.
 
+
+grandHotelTremezzoGuests.pop()
 
 
 
@@ -124,6 +131,7 @@ const pounds = 155;
 
 
 
+grandHotelTremezzoGuests.push("Mario Batali")
 
 
 
@@ -136,6 +144,7 @@ const pounds = 155;
 // Log grandHotelTremezzoGuests to the console.
 
 
+grandHotelTremezzoGuests.unshift("Gordon Ramsay")
 
 
 
@@ -148,7 +157,9 @@ const pounds = 155;
 
 
 
+let totalGuests = grandHotelTremezzoGuests.length
 
+console.log(totalGuests)
 
 
 
@@ -162,6 +173,8 @@ const pounds = 155;
 // Log grandHotelTremezzoPastGuests to the console
 
 
+let grandHotelTremezzoPastGuests = []
+
 
 
 
@@ -174,6 +187,11 @@ const pounds = 155;
 // Log both grandHotelTremezzoGuests and grandHotelTremezzoPastGuests in the same console.log statement.
 
 
+grandHotelTremezzoGuests.splice(1,1)
+
+grandHotelTremezzoPastGuests.push("George Clooney")
+
+console.log(grandHotelTremezzoPastGuests , grandHotelTremezzoGuests)
 
 
 
@@ -188,7 +206,9 @@ const pounds = 155;
 // (Don't create a new variable!!)
 //  Log the variable to the console.
 
+totalGuests = grandHotelTremezzoGuests.length
 
+console.log(totalGuests)
 
 
 
@@ -205,8 +225,7 @@ const pounds = 155;
 // Create a variable that is a copy of the grandHotelTremezzoGuests
 // array and log the result.
 
-
-
+let guestsCopy = grandHotelTremezzoGuests
 
 
 
@@ -218,15 +237,20 @@ const pounds = 155;
 // includes Gordon Ramsay, the boss' favorite chef.
 
 
-
-
-
 // Now that the boss has verified Gordon is on the list, he notices
 // over your shoulder that he's at the front. He wants you to move the
 // list order around so that Gordon is at the end because "You save the best for
 // last! Scramble it, reverse it, do whatever you have to do"
 // Find the right method to accomplish this task.
 
+
+
+
+guestsCopy.shift("Gordon Ramsay")
+
+guestsCopy.push("Gordon Ramsay")
+
+console.log(guestsCopy)
 
 
 
